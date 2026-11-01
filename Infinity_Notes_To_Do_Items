@@ -1,1 +1,3 @@
+1) Data ingestion pipelines were memory-optimized via dtype downcasting and efficient columnar 
+storage formats to ensure high-throughput execution under strict production resource constraints
 
