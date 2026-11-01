@@ -1,0 +1,8 @@
+What is parquet?
+  Apache Parquet is an open-source, column-oriented storage format designed for analytical workloads and machine learning pipelines. Unlike row-based formats like CSV, it stores data column by column, enabling column pruning and predicate pushdown so you only load the exact features and rows you need from disk, drastically reducing I/O latency and memory overhead.
+  Quick 3-Point Breakdown to Elaborate in an Interview:
+  Columnar Storage: Great for wide feature matrices (like fraud detection models with hundreds of columns) because you don't waste CPU or RAM loading irrelevant attributes.
+  
+  Built-in Compression: Uses type-specific encoding (like dictionary and run-length encoding) paired with codecs like Snappy to compress files significantly smaller than raw text.
+  
+  Optimized I/O: Header/footer metadata allows query engines (Pandas, Polars, DuckDB, Spark) to skip reading entire chunks of data before it even hits memory.
