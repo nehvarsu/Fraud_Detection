@@ -1,3 +1,19 @@
 1) Data ingestion pipelines were memory-optimized via dtype downcasting and efficient columnar 
 storage formats to ensure high-throughput execution under strict production resource constraints
-
+Definitions:
+1) What is Parquet:
+  Apache Parquet is an open-source, column-oriented data storage format designed for high-performance analytics, 
+  optimized for both storage efficiency and rapid read throughput in distributed and local computing environments.
+  
+  Unlike row-oriented formats (such as CSV, JSON, or relational database row stores) which serialize data sequentially row by    row,Parquet organizes and stores data column by column.
+  
+  Core Technical Architecture
+  Columnar Storage & Layout:
+  
+  Data is partitioned into horizontal segments called Row Groups, within which data is stored continuously by column chunks.
+  
+  This structure ensures that values of the same data type are stored contiguously on disk, maximizing locality of reference.
+  
+  Column-Level Encoding & Compression:
+  
+  Because data of the same type lives together in a column chunk, Parquet applies highly efficient, type-specific encoding     algorithms (such as dictionary encoding, run-length encoding, and bit-packing) before applying compression codecs (such as Snappy, Gzip, or Zstandard). This drastically reduces disk footprint compared to text-based formats.
