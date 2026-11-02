@@ -6,3 +6,7 @@ What is parquet?
   Built-in Compression: Uses type-specific encoding (like dictionary and run-length encoding) paired with codecs like Snappy to compress files significantly smaller than raw text.
   
   Optimized I/O: Header/footer metadata allows query engines (Pandas, Polars, DuckDB, Spark) to skip reading entire chunks of data before it even hits memory.
+
+2) Dynamic Discovery Fix: Sometime google api updates model names based on region or API endpoint version clab instance is hitting - so instead of harcoding model name for specific environment lets ask api exactly which embedding model it has available and then pass the exact same name into our function.
+
+3) Rate Limit Guardrail Held: By pausing for exactly 4 secs between each row, code stayed safely under 15 requests per minute limit of my free tier, we got 100% success rate without single rejection or a charge.
