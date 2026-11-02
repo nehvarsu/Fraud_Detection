@@ -1,4 +1,4 @@
-# Fraud_Detection
+# Agentic-Fraud-Detection-XGBoost-LLM
 Fraud detection use case in financial services, integrating traditional DS model with generative and agentic AI
 
 Final Agentic Output:
