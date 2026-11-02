@@ -32,3 +32,9 @@ WARNING:crewai.llms.base_llm:Using an approximate input token count for model 'g
 
 --- FINAL COMPLIANCE REPORT ---
 The low-value transaction amount of approximately $10.39 on a Visa card strongly suggests an automated card-testing topology, commonly utilized by illicit actors to validate stolen payment credentials before executing larger fraudulent operations. This risk is further compounded by the association with an 'icloud.com' email address, a provider frequently exploited through anonymized relay features to conceal actor identity and evade velocity-matching controls. Additionally, the irregular fractional floating-point amount indicates automated cross-border currency conversion or script-driven checkout behavior, warranting an immediate transaction hold and escalation for secondary credential verification.
+
+
+
+<img width="1761" height="522" alt="image" src="https://github.com/user-attachments/assets/5a8cff63-1dbf-4ed8-b423-915222b4a5f9" />
+
+
