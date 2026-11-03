@@ -28,5 +28,11 @@ This project tackles a major bottleneck in financial crime operations: translati
 * **Resilient API Guardrails:** Includes custom circuit breakers, automated rate-limit handling (15 RPM compliance), and dynamic model discovery to bypass SDK namespace collisions.
 * **Safe Secrets Management:** Architecture relies on Colab's native Secrets manager, ensuring zero API key leakage in the public repository.
 
+Multi-Agent Swarm: a specialized team of AI agents
+Phase 1: The "Agent-Informed" EDA:
+
+By plotting the transaction amounts on a log scale, I proved that a rigid, rules-based threshold for fraud detection is insufficient. A $150 transaction might be completely standard for one user, but it sits dead-center at the median for an Account Takeover. This variance in financial distribution is exactly why I moved beyond a single XGBoost score and architected an Agentic AI system. I needed a specialized Financial Agent that could evaluate the dollar amount dynamically in the context of the specific typology, rather than relying on a static numerical cut-off.
+
+<img width="872" height="482" alt="image" src="https://github.com/user-attachments/assets/40a9a5aa-475b-4a11-9f9e-5e29cbd72766" />
 
 
